@@ -3,7 +3,7 @@ this is to contain the thought process of this project
 ### General JavaScript Code Requirements
 - The number of changes/updates to the DOM should be kept to a minimum, as they are very expensive for the browser.
 - The application logic should be separated from DOM manipulation tasks.
-- Object destructuring should be used to get the values from an object. To help avoiding unnecessary code.
+- Object destructuring should be used to get the values from an object. To help to avoid unnecessary code.
 
 
 ### Description Of Responsibilities Of Main files
