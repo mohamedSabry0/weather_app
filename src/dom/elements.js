@@ -4,10 +4,9 @@ const elements = (() => {
   const searchField = document.querySelector('.search-field');
   const searchBtn = document.querySelector('.search-btn');
   const cityName = document.querySelector('.city-name');
-  const weatherResult = 
-  document.querySelector('.weather-result');
+  const weatherResult = document.querySelector('.weather-result');
   const weatherImg = document.querySelector('.weather-img');
-  const weatherDesc = document.querySelector('.weather-desc')
+  const weatherDesc = document.querySelector('.weather-desc');
   return {
     main,
     searchForm,
@@ -16,8 +15,8 @@ const elements = (() => {
     weatherResult,
     weatherImg,
     weatherDesc,
-    cityName
-  }
+    cityName,
+  };
 })();
 
 export default elements;
