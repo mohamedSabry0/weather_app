@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
 </head>
+
 <body>
-  <div class="search">
-    <input type="text" class="city-field">
-    <button class="search-btn">search</button>
-  </div>
-  <div class="result"></div>
+  <main class="main">
+    <h2>Weather App Using an External API</h2>
+    <div class="search-form">
+      <input type="text" class="search-field" placeholder="type a city name...">
+      <button class="search-btn">search</button>
+    </div>
+    <div class="weather-result">
+      <h3 class="city-name"></h3>
+      <img class="weather-img" src="" alt="">
+      <p class="weather-desc"></p>
+    </div>
+  </main>
   <script src="main.js"></script>
 </body>
+
 </html>
