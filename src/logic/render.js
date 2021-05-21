@@ -13,16 +13,24 @@ const renderModule = (elements) => {
   };
 
   const renderResult = async () => {
-    // render should be moved to dom
     const city = searchField.value;
-    const { description, icon, country } = await fetchWeather(city);
-    cityName.textContent = ` weather in ${city}, ${country}`;
-    searchField.value = '';
-    weatherImg.setAttribute('src', `${iconBaseURL + icon}@2x.png`);
-    weatherImg.setAttribute('alt', 'weather image');
-    weatherDesc.textContent = description;
+    
+    fetchWeather(city)
+    .then(({description, icon, country}) =>{
+      cityName.textContent = ` weather in ${city}, ${country}`;
+      searchField.value = '';
+      weatherImg.setAttribute('src', `${iconBaseURL + icon}@2x.png`);
+      weatherImg.setAttribute('alt', 'weather image');
+      weatherDesc.textContent = description;
+    })
+    .catch(err => {
+      console.error('Error Code:', err.cod, ', Error:', err.message);
+      weatherImg.setAttribute('src', '');
+      weatherImg.setAttribute('alt', '');
+      weatherDesc.textContent = err.message;
+    });
   };
-
+  
   return {
     renderLoading,
     renderResult,

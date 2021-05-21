@@ -1,7 +1,7 @@
 # weather_app
 > weather frontend using JS and OpenWeatherMap API
 
-![screenshot](./src/images/screenshot.png)
+![screenshot](./src/assets/images/screenshot.png)
 
 ## Built With
 
