@@ -7,6 +7,7 @@ const elements = (() => {
   const weatherResult = document.querySelector('.weather-result');
   const weatherImg = document.querySelector('.weather-img');
   const weatherDesc = document.querySelector('.weather-desc');
+  const temperature = document.querySelector('.temperature');
   return {
     main,
     searchForm,
@@ -16,6 +17,7 @@ const elements = (() => {
     weatherImg,
     weatherDesc,
     cityName,
+    temperature
   };
 })();
 

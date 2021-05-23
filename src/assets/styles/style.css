@@ -10,3 +10,16 @@
   flex-direction: column;
   align-items: center;
 }
+
+.hidden {
+  display: none;
+}
+
+.temperature {
+  background-color: rgb(18, 57, 165);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font: 1.2rem bold;
+  cursor: pointer;
+}

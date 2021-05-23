@@ -39,7 +39,8 @@ const config = {
   ```javascript
   index.html
   ```
-
+## Acknowledgement
+- [fix long decimals in JS](https://stackoverflow.com/a/11832950/6010915)
 ## Author
 
 👩‍💻 **Mohamed Sabry**

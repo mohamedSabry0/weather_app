@@ -1,22 +1,20 @@
 import elements from './elements';
 
-const listeners = () => {
-  const searchEvent = (renderModule) => {
+const listeners = (renderModule) => {
+  const render = renderModule(elements);
+  const searchEvent = () => {
     elements.searchBtn.addEventListener('click', () => {
-      renderModule(elements).renderLoading();
-      renderModule(elements).renderResult();
+      render.renderLoading();
+      render.renderResult();
     });
   };
-  const changeTempEvent = (converterModule) => {
-    elements.tempBtn.addEventListener('click', () => {
-      converterModule(elements).renderLoading();
-      converterModule(elements).renderResult();
+  const changeTempEvent = () => {
+    elements.temperature.addEventListener('click', () => {
+      render.renderTemp();
     });
   };
-  return {
-    searchEvent,
-    changeTempEvent
-  }
+  searchEvent();
+  changeTempEvent();
 };
 
 export default listeners;
