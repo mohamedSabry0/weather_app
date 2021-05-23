@@ -5,11 +5,35 @@
   align-items: center;
 }
 
+.heading {
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
 .weather-result {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.801);
+  padding: 1rem;
 }
+
+.weather-result > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* .weather-img {
+
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: wheat;
+  z-index: 0;
+} */
 
 .hidden {
   display: none;

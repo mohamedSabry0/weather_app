@@ -17,7 +17,7 @@ const elements = (() => {
     weatherImg,
     weatherDesc,
     cityName,
-    temperature
+    temperature,
   };
 })();
 
