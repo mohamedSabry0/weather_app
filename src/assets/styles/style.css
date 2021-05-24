@@ -23,18 +23,6 @@
   z-index: 2;
 }
 
-/* .weather-img {
-
-  position: absolute;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: wheat;
-  z-index: 0;
-} */
-
 .hidden {
   display: none;
 }
@@ -45,5 +33,30 @@
   padding: 1rem;
   border-radius: 10px;
   font: 1.2rem bold;
+}
+
+.toggle {
+  background-color: #555;
+  border: 1px solid #333;
+  width: 45px;
+  height: 30px;
+  border-radius: 20px;
   cursor: pointer;
+}
+
+.toggle span {
+  display: block;
+  border: 1px solid #ddd;
+  background-color: #bbb;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }

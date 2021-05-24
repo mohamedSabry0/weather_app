@@ -8,6 +8,8 @@ const elements = (() => {
   const weatherImg = document.querySelector('.weather-img');
   const weatherDesc = document.querySelector('.weather-desc');
   const temperature = document.querySelector('.temperature');
+  const toggleBtn = document.querySelector('.toggle');
+  const toggleSpan = document.querySelector('.toggle span');
   return {
     main,
     searchForm,
@@ -18,6 +20,8 @@ const elements = (() => {
     weatherDesc,
     cityName,
     temperature,
+    toggleBtn,
+    toggleSpan,
   };
 })();
 

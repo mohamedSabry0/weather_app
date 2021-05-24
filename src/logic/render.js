@@ -6,7 +6,7 @@ const iconBaseURL = 'http://openweathermap.org/img/wn/';
 const renderModule = (elements) => {
   let temps;
   const {
-    weatherDesc, weatherImg, searchField, cityName, temperature, main,
+    weatherDesc, weatherImg, searchField, cityName, temperature, main, toggleBtn, toggleSpan,
   } = elements;
 
   const renderImg = (src, alt) => {
@@ -14,10 +14,14 @@ const renderModule = (elements) => {
     weatherImg.setAttribute('alt', alt);
   };
 
+  const toggleAnimation = () => {
+    toggleSpan.classList.toggle('float-right');
+  };
+
   const renderTemp = () => {
     const current = temperature.textContent.split(' ')[0];
     const { fahrenheit, celsius } = temps.tempCalc();
-    temperature.textContent = current === celsius ? `${fahrenheit} F\u00B0` : `${celsius} C\u00B0`;
+    temperature.textContent = parseFloat(current) === celsius ? `${fahrenheit} F\u00B0` : `${celsius} C\u00B0`;
   };
 
   const changeBackground = (icon) => {
@@ -39,6 +43,7 @@ const renderModule = (elements) => {
 
         temps = tempModule(temp);
         temperature.classList.remove('hidden');
+        toggleBtn.classList.remove('hidden');
         renderTemp();
         changeBackground(`${iconBaseURL + icon}@2x.png`);
         searchField.value = '';
@@ -55,6 +60,7 @@ const renderModule = (elements) => {
     renderLoading,
     renderResult,
     renderTemp,
+    toggleAnimation,
   };
 };
 

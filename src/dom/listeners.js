@@ -9,8 +9,9 @@ const listeners = (renderModule) => {
     });
   };
   const changeTempEvent = () => {
-    elements.temperature.addEventListener('click', () => {
+    elements.toggleBtn.addEventListener('click', () => {
       render.renderTemp();
+      render.toggleAnimation();
     });
   };
   searchEvent();
