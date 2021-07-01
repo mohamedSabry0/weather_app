@@ -46,7 +46,7 @@ const config = {
 - [fix long decimals in JS](https://stackoverflow.com/a/11832950/6010915)
 ## Author
 
-👩‍💻 **Mohamed Sabry**
+**Mohamed Sabry**
 
 - GitHub: [@mohamedSabry0](https://github.com/mohamedSabry0)
 - Twitter: [@mohsmh0](https://twitter.com/mohsmh0)
