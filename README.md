@@ -6,7 +6,7 @@
 ## Built With
 
 - HTML/CSS
-- Javascript
+- JavaScript
 - webpack
 
 ## Getting Started
